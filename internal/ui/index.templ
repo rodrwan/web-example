@@ -1,0 +1,56 @@
+package ui
+
+templ Layout() {
+	<!DOCTYPE html>
+	<html lang="es">
+		<head>
+			<meta charset="UTF-8"/>
+			<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+			<title>Web Example</title>
+			<!-- Fuente Inter desde Google Fonts -->
+			<link rel="preconnect" href="https://fonts.googleapis.com">
+			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+			<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+			<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+			<script src="https://cdn.tailwindcss.com"></script>
+			<script>
+				tailwind.config = {
+					theme: {
+						extend: {
+							fontFamily: {
+								'sans': ['Nunito', 'Inter', 'ui-sans-serif', 'system-ui'],
+							},
+							colors: {
+								'groupie-primary': '#3a1c32',
+								'groupie-secondary': '#18181b',
+								'groupie-accent': '#a83250',
+								'groupie-accent-light': '#a83250',
+								'groupie-success': '#01b796',
+								'groupie-warning': '#facc15',
+								'groupie-danger': '#ef4444',
+								'groupie-dark': '#3a1c32',
+								'groupie-darker': '#18181b',
+								'groupie-card': '#3a1c32',
+								'groupie-card-hover': '#a83250',
+								'groupie-text': '#f4f4f5',
+								'groupie-text-muted': '#a1a1aa',
+								'groupie-border': '#ffffff4d',
+								'groupie-border-light': '#ffffff33'
+							}
+						}
+					}
+				}
+			</script>
+			<style>
+				body {
+					background: url('/static/img/background.png') #3a1c32 !important;
+				}
+			</style>
+		</head>
+		<body class="min-h-screen text-groupie-text">
+			<div class="container mx-auto">
+                <h1>Hello, World!</h1>
+            </div>
+		</body>
+	</html>
+}

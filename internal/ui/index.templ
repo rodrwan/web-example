@@ -43,13 +43,24 @@ templ Layout() {
 			</script>
 			<style>
 				body {
-					background: url('/static/video/hero-bg.mp4') #070515 !important;
+					background: #070515 !important;
+				}
+				#myVideo {
+					position: fixed;
+					right: 0;
+					bottom: 0;
+					min-width: 100%;
+					min-height: 100%;
+					z-index:-1;
 				}
 			</style>
 		</head>
 		<body class="min-h-screen text-groupie-text">
-			<div class="container mx-auto">
-                <h1>Hello, World!</h1>
+			<video id="myVideo" autoplay muted loop>
+				<source src="/static/video/hero-bg.mp4" type="video/mp4">
+			</video>
+			<div class="container items-center justify-center mx-auto">
+                <h1 class="text-4xl font-bold text-white">Hello, World!</h1>
             </div>
 		</body>
 	</html>

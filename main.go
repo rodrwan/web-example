@@ -12,8 +12,6 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-//go:generate ./...
-
 //go:embed static
 var staticFS embed.FS
 
